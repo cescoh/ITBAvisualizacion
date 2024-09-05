@@ -1,6 +1,6 @@
-                                                                                                  # ITBAvisualizacion
-                                                              Trabajo realizado para el Modulo 4 - Visualizacion de datos de la Certificacion Avanzada en Data Science
-                                                                          Integrantes: Leiva, Maria Julia ~ Odorico, Maria Del Pilar ~ Paz, Francisco
+                                      # ITBAvisualizacion
+  Trabajo realizado para el Modulo 4 - Visualizacion de datos de la Certificacion Avanzada en Data Science
+            Integrantes: Leiva, Maria Julia ~ Odorico, Maria Del Pilar ~ Paz, Francisco
 
 Introducción
 
