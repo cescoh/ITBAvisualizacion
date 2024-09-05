@@ -10,6 +10,9 @@
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background-color: #ffcc00;
@@ -24,22 +27,28 @@
       font-size: 24px;
       color: #333;
     }
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
     footer {
       background-color: #333;
       color: white;
       text-align: center;
       padding: 10px;
-      position: fixed;
-      bottom: 0;
+      position: relative;
       width: 100%;
     }
     .tableauPlaceholder {
-      margin: 20px auto;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .container {
-      padding: 20px;
-      text-align: center;
+    .tableauViz {
+      max-width: 100%;
     }
   </style>
 </head>
@@ -50,24 +59,26 @@
   <h1>Uso del Sistema de Bicicletas - CABA</h1>
 </header>
 
-<div class='tableauPlaceholder' id='viz1725497538149' style='position: relative'>
-  <noscript>
-    <a href='#'><img alt='EcoBicis - Grupo 1' src='https://public.tableau.com/static/images/HY/HY9GQ8JHY/1_rss.png' style='border: none' /></a>
-  </noscript>
-  <object class='tableauViz' style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='path' value='shared/HY9GQ8JHY' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/HY/HY9GQ8JHY/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='es-ES' />
-  </object>
-</div>
+<main>
+  <div class='tableauPlaceholder' id='viz1725497538149'>
+    <noscript>
+      <a href='#'><img alt='EcoBicis - Grupo 1' src='https://public.tableau.com/static/images/HY/HY9GQ8JHY/1_rss.png' style='border: none' /></a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='path' value='shared/HY9GQ8JHY' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/HY/HY9GQ8JHY/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='es-ES' />
+    </object>
+  </div>
+</main>
 
 <script type='text/javascript'>
   var divElement = document.getElementById('viz1725497538149');
