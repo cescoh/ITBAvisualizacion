@@ -12,4 +12,5 @@ Este trabajo se enfoca en analizar el uso del sistema de bicicletas de CABA, uti
 El objetivo es proporcionar una visión integral del funcionamiento del sistema, con el fin de ofrecer recomendaciones que puedan optimizar su operación y promover un mayor uso del mismo. Además, se busca entender cómo este servicio contribuye a la movilidad sustentable en la ciudad y qué mejoras pueden implementarse para incrementar su impacto positivo en la comunidad.
 
 Graficos en Tableau: https://public.tableau.com/app/profile/pili.odorico/viz/EcoBicis-Grupo1/EcoBicis-Grupo1
+
 Pagina: https://cescoh.github.io/ITBAvisualizacion/
