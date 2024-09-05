@@ -33,7 +33,6 @@
       margin: 0;
       font-size: 24px;
       color: #333;
-      text-transform: none !important;
     }
     main {
       flex-grow: 1;
@@ -49,7 +48,6 @@
       padding: 10px;
       position: relative;
       width: 100%;
-      text-transform: none !important;
     }
     .tableauPlaceholder {
       display: flex;
@@ -59,12 +57,20 @@
       height: 100vh; /* Mantiene el tamaño de la ventana */
     }
     .tableauViz {
-      width: 80%; /* Ajusta el ancho al 80% para evitar que se pegue a los bordes */
-      height: 100%;
-      max-height: 1300px;
+      width: 100vw; /* Usa el 100% del ancho del viewport */
+      height: 90vh; /* Usa el 90% del alto del viewport */
       max-width: 1300px; /* Ancho máximo para evitar estiramiento */
+      max-height: 1300px;
       margin: 0 auto;
       overflow: hidden; /* Evita scrollbars */
+    }
+
+    /* Media queries para dispositivos móviles */
+    @media only screen and (max-width: 768px) {
+      .tableauViz {
+        width: 95vw; /* Ajusta a un 95% del ancho de la pantalla en móviles */
+        height: 80vh; /* Ajusta la altura a un 80% en móviles */
+      }
     }
   </style>
 </head>
@@ -99,13 +105,15 @@
 <script type='text/javascript'>
   var divElement = document.getElementById('viz1725497538149');
   var vizElement = divElement.getElementsByTagName('object')[0];
+  
   function resizeViz() {
-    vizElement.style.width = '80%'; // Mantiene el tamaño al 80% del ancho del contenedor
-    vizElement.style.height = window.innerHeight + 'px'; // Ajusta la altura al tamaño de la ventana
+    vizElement.style.width = '100vw'; // Ancho total del viewport
+    vizElement.style.height = '90vh'; // Altura ajustada al 90% del viewport
   }
+
   window.addEventListener('resize', resizeViz); // Actualiza el tamaño cuando se cambia el tamaño de la ventana
   resizeViz(); // Ajusta el tamaño inicial
-  
+
   var scriptElement = document.createElement('script');
   scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
   vizElement.parentNode.insertBefore(scriptElement, vizElement);
